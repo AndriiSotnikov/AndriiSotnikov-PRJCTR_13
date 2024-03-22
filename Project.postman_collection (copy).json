@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "bb198e51-5649-40ee-be83-c92a897ff172",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33644139"
+	},
+	"item": [
+		{
+			"name": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP@164.92.218.36:8080/api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP@164.92.218.36:8080/api",
+					"auth": {
+						"user": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP"
+					},
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP@164.92.218.36:8080/api/addresses/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://164.92.218.36:8080/api/addresses/3",
+					"protocol": "http",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mode\": \"raw\",\r\n    \"raw\": \"{\\n   \\\"name\\\": \\\"Iphone 15\\\",\\n   \\\"data\\\": {\\n      \\\"year\\\": 2023,\\n      \\\"price\\\": 1549.99,\\n      \\\"CPU model\\\": \\\"Intel Core i9\\\",\\n      \\\"Hard disk size\\\": \\\"500 GB\\\"\\n   }\\n}\",\r\n    \"options\": {\r\n        \"raw\": {\r\n            \"language\": \"json\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "164.92.218.36:8080/api/addresses/",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mode\": \"raw\",\r\n    \"raw\": \"{\\n   \\\"name\\\": \\\"Iphone 15\\\",\\n   \\\"data\\\": {\\n      \\\"year\\\": 2023,\\n      \\\"price\\\": 1549.99,\\n      \\\"CPU model\\\": \\\"Intel Core i9\\\",\\n      \\\"Hard disk size\\\": \\\"500 GB\\\"\\n   }\\n}\",\r\n    \"options\": {\r\n        \"raw\": {\r\n            \"language\": \"json\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "164.92.218.36:8080/api/addresses/",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mode\": \"raw\",\r\n    \"raw\": \"{\\n   \\\"name\\\": \\\"Iphone 15\\\",\\n   \\\"data\\\": {\\n      \\\"year\\\": 2023,\\n      \\\"price\\\": 1549.99,\\n      \\\"CPU model\\\": \\\"Intel Core i9\\\",\\n      \\\"Hard disk size\\\": \\\"500 GB\\\"\\n   }\\n}\",\r\n    \"options\": {\r\n        \"raw\": {\r\n            \"language\": \"json\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "164.92.218.36:8080/api/addresses/",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
