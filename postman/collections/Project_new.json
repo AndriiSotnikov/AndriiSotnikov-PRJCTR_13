@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "63b66e22-10a2-4d1c-9ba2-ffb702e031ca",
+		"name": "Project_new",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "33644139-63b66e22-10a2-4d1c-9ba2-ffb702e031ca"
+	},
+	"item": [
+		{
+			"name": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP@164.92.218.36:8080/api",
+			"id": "b2b89f6f-e93e-4206-b4d0-2954ef8bd983",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP@164.92.218.36:8080/api",
+					"auth": {
+						"user": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP"
+					},
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP@164.92.218.36:8080/api/addresses/",
+			"id": "5bc3bd8c-e299-4859-965c-2108457f126b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://164.92.218.36:8080/api/addresses/3",
+					"protocol": "http",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "d96339e7-65c1-4012-b4d8-196b6e8b62dc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mode\": \"raw\",\r\n    \"raw\": \"{\\n   \\\"name\\\": \\\"Iphone 15\\\",\\n   \\\"data\\\": {\\n      \\\"year\\\": 2023,\\n      \\\"price\\\": 1549.99,\\n      \\\"CPU model\\\": \\\"Intel Core i9\\\",\\n      \\\"Hard disk size\\\": \\\"500 GB\\\"\\n   }\\n}\",\r\n    \"options\": {\r\n        \"raw\": {\r\n            \"language\": \"json\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "164.92.218.36:8080/api/addresses/",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a86ad681-ca52-4ac9-a5e4-cfcc5a2ed791",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "86262489-58f1-42a6-8f6c-1489885ee11c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mode\": \"raw\",\r\n    \"raw\": \"{\\n   \\\"name\\\": \\\"Iphone 15\\\",\\n   \\\"data\\\": {\\n      \\\"year\\\": 2023,\\n      \\\"price\\\": 1549.99,\\n      \\\"CPU model\\\": \\\"Intel Core i9\\\",\\n      \\\"Hard disk size\\\": \\\"500 GB\\\"\\n   }\\n}\",\r\n    \"options\": {\r\n        \"raw\": {\r\n            \"language\": \"json\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "164.92.218.36:8080/api/addresses/",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eff646e4-b754-40e7-90cd-75014dd1ffe8",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "985f8873-a218-4709-9d6c-c810d5cb8ba9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mode\": \"raw\",\r\n    \"raw\": \"{\\n   \\\"name\\\": \\\"Iphone 15\\\",\\n   \\\"data\\\": {\\n      \\\"year\\\": 2023,\\n      \\\"price\\\": 1549.99,\\n      \\\"CPU model\\\": \\\"Intel Core i9\\\",\\n      \\\"Hard disk size\\\": \\\"500 GB\\\"\\n   }\\n}\",\r\n    \"options\": {\r\n        \"raw\": {\r\n            \"language\": \"json\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "164.92.218.36:8080/api/addresses/",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eff646e4-b754-40e7-90cd-75014dd1ffe8",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "9ec5c0b5-3528-44be-bb1a-0b1f5bae4602",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "8NAWDIDYJQR6GWFP7A4V8IG6FIFC7STP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mode\": \"raw\",\r\n    \"raw\": \"{\\n   \\\"name\\\": \\\"Iphone 15\\\",\\n   \\\"data\\\": {\\n      \\\"year\\\": 2023,\\n      \\\"price\\\": 1549.99,\\n      \\\"CPU model\\\": \\\"Intel Core i9\\\",\\n      \\\"Hard disk size\\\": \\\"500 GB\\\"\\n   }\\n}\",\r\n    \"options\": {\r\n        \"raw\": {\r\n            \"language\": \"json\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "164.92.218.36:8080/api/addresses/",
+					"host": [
+						"164",
+						"92",
+						"218",
+						"36"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
